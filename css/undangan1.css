@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    background: #e8ddbec8;
+    display: flex;
+    justify-content: center;
+}
+
+.great-vibes {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* My CSS */
+.text-center{
+    text-align: center;
+}
+
+.cover {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/background1.png");
+    transition: transform 3s ease, opacity 5s ease;
+}
+
+.cover.is-closing {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+}
+
+.cover h1{
+    color: #986A52;
+}
+
+.invitation {
+    display: none;
+}
+
+.music-toggle {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 10000;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 10px;
+    background: #986A52;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.music-toggle:hover{
+
+}
+
+.invitation {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+
+    /* background-image: url("../img/background1.png"); */
+    background-color: white;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.invitation .save-date {
+    display: flex;
+    justify-content: center; /* Horizontal */
+    flex-direction: column;
+    align-items: center; /* Vertikal */
+    height: 100vh;
+}
+
+.invitation .save-date h1{
+    color: #986A52;
+    font-weight: 500;
+}
+
+.invitation span{
+    font-size: 14px;
+}
