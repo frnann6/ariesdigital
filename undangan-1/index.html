@@ -9,47 +9,87 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS : Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="../css/undangan1.css">
+    <link rel="stylesheet" href="../css/animate.css">
 </head>
 
 <body>
     <div class="cover" id="coverScreen">
-        <span class="animate__animated animate__zoomIn animate__delay-1s"
-            style="--animate-delay: 1s; --animate-duration: 1.2s;">The Wedding
-            Of</span>
-        <h1 class="great-vibes animate__animated animate__zoomIn animate__delay-1s"
-            style="--animate-delay: 1.5s; --animate-duration: 1.5s;">
-            Fernanda&nbsp;&nbsp;&&nbsp;&nbsp;Who?</h1>
+        <img src="" alt="">
 
-        <button id="btnOpen" class="animate__animated animate__zoomIn animate__delay-1s"
-            style="--animate-delay: 1.7s; --animate-duration: 1.7s;"><i class="bi bi-envelope-open-fill"></i> Buka
-            Undangan
-        </button>
+        <div class="text-center second-cover">
+            <span class="wedding-text animate__animated animate__zoomIn animate__delay-1s">The Wedding
+                Of</span>
+
+            <h1 class="great-vibes animate__animated animate__zoomIn animate__delay-1s">
+                Eren&nbsp;&nbsp;&&nbsp;&nbsp;Mikasa</h1>
+
+            <span class="work-sans kepada animate__animated animate__zoomIn animate__delay-1s">Kepada
+                Bapak/Ibu/Saudara/i</span>
+
+            <h4 class="work-sans animate__animated animate__zoomIn animate__delay-1s">Nama Tamu</h4>
+
+            <p id="btnOpen" class="animate__animated animate__zoomIn animate__delay-1s"><i
+                    class="bi bi-envelope-open-fill"></i> Buka
+                Undangan
+            </p>
+        </div>
     </div>
 
     <div class="invitation" id="invitation">
         <span id="musicToggle" class="music-toggle" type="button" aria-pressed="false"></span>
 
         <section class="save-date">
-            <span class="animate__animated animate__zoomIn animate__delay-1s"
-                style="--animate-delay: 1.3s; --animate-duration: 1s; font-size: 20px;">The Wedding Of</span>
-            <h1 class="great-vibes animate__animated animate__zoomIn animate__delay-1s"
-                style="--animate-delay: 1.6s; --animate-duration: 1.6s;">
-                Fernanda&nbsp;&nbsp;&&nbsp;&nbsp;Who?</h3>
-                <span class="text-center animate__animated animate__zoomIn animate__delay-1s"
-                    style="--animate-delay: 2s; --animte-duration: 2s;">Kami berharap Anda menjadi
+            <span class="animate__animated animate__zoomIn animate__delay-1s wedding-text">The Wedding Of</span>
+            <img src="../img/eremika.jpeg" class="animate__animated animate__zoomIn animate__delay-1s" alt="">
+            <h1 class="great-vibes animate__animated animate__zoomIn animate__delay-1s">
+                Eren&nbsp;&nbsp;&&nbsp;&nbsp;Mikasa</h3>
+                <span class="paragph text-center work-sans animate__animated animate__zoomIn animate__delay-1s">Kami
+                    berharap Anda menjadi
                     bagian dari hari istimewa kami.</span>
+                <p class="date text-center work-sans animate__animated animate__zoomIn animate__delay-1s">Hari,
+                    Tanggal, Tahun</p>
+                <a href="#date-locate"
+                    class="btn-save-date text-center animate__animated animate__zoomIn animate__delay-1s">Save The
+                    Date</a>
         </section>
 
-        <section class="opening-couple"></section>
+        <section class="opening-couple">
+            <div class="card">
+                <div class="container text-center">
+                    <p data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600" class="work-sans"><i>“Dan
+                            di
+                            antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+                            pasangan-pasangan untukmu dari
+                            jenismu sendiri, agar
+                            kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
+                            sayang.
+                            Sesungguhnya pada
+                            yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+                            berpikir.”
+                            <br><br>
+                            (Qs. Ar-Rum : 21)<i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content text-center">
+
+            </div>
+        </section>
 
         <section class="date-locate"></section>
 
@@ -66,13 +106,18 @@
         <footer></footer>
 
         <audio id="weddingMusic" loop>
-            <source
-                src="https://inv.rumahundangan.id/wp-content/uploads/2024/09/Tiara-Andini-Arsy-Widianto-Lagu-Pernikahan-Kita-1.53.mp3"
-                type="audio/mp3">
+            <source src="../songs/suratcintauntukstarlaa.wav" type="audio/mp3">
         </audio>
+
     </div>
 
     <script src="../js/undangan1.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

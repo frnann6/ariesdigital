@@ -1,0 +1,60 @@
+/* === COVER SCREEN === */
+
+.cover .second-cover .wedding-text{
+    --animate-delay: 1.4s;
+    --animate-duration: 1.4s;
+}
+
+.cover h1{
+    --animate-delay: 1.5s;
+    --animate-duration: 1.5s;
+}
+
+.cover .kepada{
+    --animate-delay: 1.8s;
+    --animate-duration: 1.8s;
+}
+
+.cover h4 {
+    --animate-delay: 2.2s;
+    --animate-duration: 2.2s;
+}
+
+.cover #btnOpen {
+    --animate-delay: 2.6s;
+    --animate-duration: 2.6s;
+}
+
+/* === INVITATION === */
+
+/* 1. SAVE DATE */
+
+.invitation .save-date .wedding-text {
+    --animate-delay: 1.3s;
+    --animate-duration: 1.3s;
+}
+
+.invitation .save-date img{
+    --animate-delay: 1.8s;
+    --animate-duration: 1.8s;
+}
+
+.invitation .save-date h1{
+    --animate-delay: 2.2s; 
+    --animate-duration: 2.2s;
+}
+
+.invitation .save-date .paragph {
+    --animate-delay: 2.8s;
+    --animte-duration: 2.8s;
+}
+
+.invitation .save-date .date {
+    --animate-delay: 3.2s;
+    --animte-duration: 3.2s;
+}
+
+.invitation .save-date .btn-save-date{
+    --animate-delay: 3.6s;
+    --animte-duration: 3.6s;
+}

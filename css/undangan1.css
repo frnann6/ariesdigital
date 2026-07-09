@@ -5,16 +5,32 @@ body{
     justify-content: center;
 }
 
+/* === CSS CUSTOM === */
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+/* === GOOGLE FONTS === */
+
 .great-vibes {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
 }
 
-/* My CSS */
-.text-center{
-    text-align: center;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
+/* === COVER SCREEN === */
 
 .cover {
     width: 100%;
@@ -37,18 +53,148 @@ body{
     transition: transform 3s ease, opacity 5s ease;
 }
 
+.cover .second-cover{
+    margin-top: 200px;
+}
+
 .cover.is-closing {
     transform: translateX(-50%) translateY(-100%);
     opacity: 0;
 }
 
-.cover h1{
-    color: #986A52;
+.cover .second-cover span{
+    display: inline-block;
 }
+
+.second-cover h1{
+    font-size: 35px;
+    color: #986A52;
+    margin-bottom: 10px;
+}
+
+.cover .second-cover .kepada{
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.cover .second-cover h4{
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.cover .second-cover #btnOpen {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0.29);
+    background: linear-gradient(135deg, #876953 0%, #96755cda 50%, #b78f70 100%);
+    color: white;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+/* === INVITATION === */
 
 .invitation {
     display: none;
 }
+
+.invitation {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+
+    /* background-image: url("../img/bg-3.jpeg"); */
+    background-color: white;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+
+/* 1. SAVE DATE */
+
+.invitation .save-date {
+    background-image: url("../img/bg-3.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    /* Horizontal */
+    flex-direction: column;
+    align-items: center;
+    /* Vertikal */
+    height: 100vh;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.invitation .save-date .wedding {
+    font-size: 20px;
+}
+
+.invitation .save-date img{
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: 20px 0 0 0;
+}
+
+.invitation .save-date h1 {
+    color: #986A52;
+    font-weight: 500;
+}
+
+.invitation .save-date .paragph {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(18, 18, 18, 0.92);
+}
+
+.invitation .save-date .date {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(26, 26, 26, 0.608);
+    padding: 12px 0 12px 0;
+}
+
+.invitation .save-date .btn-save-date{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0.29);
+    background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
+    color: white;
+}
+
+.invitation .save-date .btn-save-date:hover{
+    
+}
+
+/* 2. Opening Couple */
+
+.invitation .opening-couple .card{
+    background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
+    color: white;
+    padding: 30px 0 30px 0;
+}
+
+.invitation .opening-couple .card p{
+    margin: 0;
+    padding: 20px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.invitation .opening-couple .content{
+    background-image: url("../img/background1.png");
+
+}
+
+/* == MUSIC == */
 
 .music-toggle {
     position: fixed;
@@ -62,37 +208,9 @@ body{
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .music-toggle:hover{
 
-}
-
-.invitation {
-    width: 100%;
-    max-width: 430px;
-    min-height: 100vh;
-
-    /* background-image: url("../img/background1.png"); */
-    background-color: white;
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-.invitation .save-date {
-    display: flex;
-    justify-content: center; /* Horizontal */
-    flex-direction: column;
-    align-items: center; /* Vertikal */
-    height: 100vh;
-}
-
-.invitation .save-date h1{
-    color: #986A52;
-    font-weight: 500;
-}
-
-.invitation span{
-    font-size: 14px;
 }
