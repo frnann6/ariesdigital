@@ -190,8 +190,16 @@ body{
 }
 
 .invitation .opening-couple .content{
-    background-image: url("../img/background1.png");
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-image: url("../img/background1.png"); */
+    color: #986A52;
+}
 
+.invitation .opening-couple .salam-pembuka{
+    font-size: 14px;
+    color: black;
+    padding: 0 20px 0 20px;
 }
 
 /* == MUSIC == */
