@@ -34,6 +34,9 @@ btnOpen.addEventListener("click", async () => {
   coverScreen.classList.add("is-closing");
   invitation.style.display = "block";
 
+  // Refresh AOS ketika konten ditampilkan
+  AOS.refresh();
+
   musicEnabled = true;
   await playMusicIfAllowed();
 

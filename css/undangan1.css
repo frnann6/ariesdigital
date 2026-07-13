@@ -138,6 +138,7 @@ body{
     width: 220px;
     height: 220px;
     margin: 20px 0 0 0;
+    border: 3px solid #986A52;
 }
 
 .invitation .save-date h1 {
@@ -192,14 +193,43 @@ body{
 .invitation .opening-couple .content{
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-image: url("../img/background1.png"); */
+    background-image: url("../img/bg-3.jpeg");
     color: #986A52;
 }
 
 .invitation .opening-couple .salam-pembuka{
-    font-size: 14px;
-    color: black;
-    padding: 0 20px 0 20px;
+    font-size: 13px;
+    color: rgba(71, 71, 71, 0.88) !important;
+    padding: 10px 20px 0 20px;
+    line-height: 1.5;
+}
+
+.invitation .opening-couple .content img{
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: 20px 0 20px 0;
+    border: 3px solid #986A52;
+    box-shadow: 4px 8px 15px 0px rgba(0, 0, 0, 0.401);
+}
+
+.invitation .opening-couple .content h1{
+    margin: 20px 0 20px 0;
+}
+
+.invitation .opening-couple .content span{
+    color: rgba(71, 71, 71, 0.88) !important;
+    font-size: 13px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.invitation .date-locate {
+    background-color: #986A52;
+}
+
+.invitation h1{
+    margin: 0;
 }
 
 /* == MUSIC == */
