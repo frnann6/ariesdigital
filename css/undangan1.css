@@ -224,11 +224,75 @@ body{
     display: inline-block;
 }
 
+/* 3. Date Locate */
+
 .invitation .date-locate {
-    background-color: #986A52;
+    background-color: #af886b;
 }
 
-.invitation h1{
+.invitation .date-locate .content{
+    padding: 20px 0 0 0;
+}
+
+.invitation .date-locate .content h1{
+    color: rgba(255, 255, 255, 0.898);
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+.invitation .date-locate .content .time{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.invitation .date-locate .content .time h1{
+    font-size: 23px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.invitation .date-locate .content .time p{
+    color: white;
+    font-size: 11px;
+    margin: 0;
+}
+
+.invitation .date-locate .content .time .border{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.invitation .date-locate .content .akad{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.invitation .date-locate .content .card {
+    background-image: url("../img/bg-3.jpeg");
+    border-radius: 25px;
+    padding-top: 5px;
+}
+
+.invitation .date-locate .content .akad .card img {
+    width: 340px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+tes{
+    color: #bc9c84;
+}
+
+.invitation .date-locate .content .akad .card h1{
+    color: #986A52;
+    padding: 0;
+    padding: 20px 0 20px 0;
+}
+
+.invitation .date-locate .content .akad .card p {
     margin: 0;
 }
 
@@ -236,12 +300,12 @@ body{
 
 .music-toggle {
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 50px;
+    right: 20px;
     z-index: 10000;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.367);
     border-radius: 999px;
-    padding: 8px 10px;
+    padding: 6px 8px;
     background: #986A52;
     color: #fff;
     font-size: 20px;
