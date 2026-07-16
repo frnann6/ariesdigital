@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background: #e8ddbec8;
@@ -14,6 +18,15 @@ body{
 .container {
     padding-right: 7px;
     padding-left: 7px;
+}
+
+.divider {
+    width: 60%;
+    max-width: 300px;
+    /* biar nggak kepanjangan */
+    height: 1.2px;
+    background-color: #986A52;
+    margin: auto;
 }
 
 /* === GOOGLE FONTS === */
@@ -228,6 +241,7 @@ body{
 
 .invitation .date-locate {
     background-color: #af886b;
+    padding-bottom: 50px;
 }
 
 .invitation .date-locate .content{
@@ -272,6 +286,7 @@ body{
 
 .invitation .date-locate .content .card {
     background-image: url("../img/bg-3.jpeg");
+        background-size: cover;
     border-radius: 25px;
     padding-top: 5px;
 }
@@ -289,11 +304,56 @@ tes{
 .invitation .date-locate .content .akad .card h1{
     color: #986A52;
     padding: 0;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 10px 0;
 }
 
 .invitation .date-locate .content .akad .card p {
     margin: 0;
+    font-size: 13px;
+    font-family: "Work Sans", sans-serif;
+    padding: 10px 0 10px 0;
+    color: #7A7A7A;
+    font-weight: 500;
+}
+
+.invitation .date-locate .content .akad .card .date{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.invitation .date-locate .content .akad .card .locate {
+    line-height: 20px;
+}
+
+.invitation .date-locate .content .akad .card .save-locate{
+    padding: 20px 0 20px 0;
+}
+
+.invitation .date-locate .content .akad .card .btn-save-locate{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0.29);
+    background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
+    color: white;
+}
+
+.invitation .date-locate .content .akad .card .divider-cont {
+    padding: 20px 0 40px 0;
+}
+
+.invitation .date-locate .content .akad .card .clone h1{
+    padding-top: 0;
+}
+
+/* 4. Gallery */
+
+.invitation .gallery{
+    background-image: url("../img/bg-3.jpeg");
 }
 
 /* == MUSIC == */
