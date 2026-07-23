@@ -32,7 +32,7 @@ body{
 /* === GOOGLE FONTS === */
 
 .great-vibes {
-    font-family: "Great Vibes", cursive;
+    font-family: "Great Vibes", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -68,6 +68,13 @@ body{
 
 .cover .second-cover{
     margin-top: 200px;
+    background-image: url("../img/bg-2.jpeg");
+    background-size: cover;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+            0 4px 6px rgba(0, 0, 0, .1),
+            0 10px 20px rgba(0, 0, 0, .15);
 }
 
 .cover.is-closing {
@@ -77,6 +84,7 @@ body{
 
 .cover .second-cover span{
     display: inline-block;
+    font-size: 12px;
 }
 
 .second-cover h1{
@@ -95,16 +103,23 @@ body{
     margin-bottom: 30px;
 }
 
+.cover .second-cover p{
+    display: inline-block;
+}
+
 .cover .second-cover #btnOpen {
     font-size: 12px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin: 0;
     border-radius: 20px;
     border: rgba(255, 255, 255, 0.29);
     background: linear-gradient(135deg, #876953 0%, #96755cda 50%, #b78f70 100%);
     color: white;
-    margin: 10px 0 10px 0;
     cursor: pointer;
+    box-shadow:
+            0 4px 6px rgba(0, 0, 0, .1),
+            0 10px 20px rgba(0, 0, 0, .15);
 }
 
 /* === INVITATION === */
@@ -114,9 +129,11 @@ body{
 }
 
 .invitation {
+    position: relative;
     width: 100%;
     max-width: 430px;
     min-height: 100vh;
+    overflow-x: hidden;
 
     /* background-image: url("../img/bg-3.jpeg"); */
     background-color: white;
@@ -142,11 +159,16 @@ body{
     padding-right: 7px;
 }
 
+/* .invitation .save-date .perhiasan-left{
+        width: 150px;
+        height: 200px;
+} */
+
 .invitation .save-date .wedding {
     font-size: 20px;
 }
 
-.invitation .save-date img{
+.invitation .save-date .foto{
     border-radius: 50%;
     width: 220px;
     height: 220px;
@@ -182,6 +204,9 @@ body{
     border: rgba(255, 255, 255, 0.29);
     background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
     color: white;
+    box-shadow:
+            0 4px 6px rgba(0, 0, 0, .1),
+            0 10px 20px rgba(0, 0, 0, .15);
 }
 
 .invitation .save-date .btn-save-date:hover{
@@ -191,9 +216,13 @@ body{
 /* 2. Opening Couple */
 
 .invitation .opening-couple .card{
+    position: relative;
     background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
     color: white;
     padding: 30px 0 30px 0;
+    box-shadow:
+    0 4px 6px rgba(0,0,0,.1),
+    0 10px 20px rgba(0,0,0,.15);
 }
 
 .invitation .opening-couple .card p{
@@ -278,27 +307,24 @@ body{
     padding: 5px 10px 5px 10px;
 }
 
-.invitation .date-locate .content .akad{
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .invitation .date-locate .content .akad{
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 .invitation .date-locate .content .card {
     background-image: url("../img/bg-3.jpeg");
-        background-size: cover;
-    border-radius: 25px;
+    background-size: cover;
+    border-radius: 20px;
     padding-top: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .invitation .date-locate .content .akad .card img {
     width: 340px;
     height: 340px;
     border-radius: 20px;
-}
-
-tes{
-    color: #bc9c84;
 }
 
 .invitation .date-locate .content .akad .card h1{
@@ -330,6 +356,10 @@ tes{
     padding: 20px 0 20px 0;
 }
 
+.invitation .date-locate .content .akad .card .clone .save-locate {
+    padding: 20px 0 60px 0;
+}
+
 .invitation .date-locate .content .akad .card .btn-save-locate{
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
@@ -340,6 +370,7 @@ tes{
     border: rgba(255, 255, 255, 0.29);
     background: linear-gradient(135deg, #af886b 0%, #a98467da 50%, #c99d7b 100%);
     color: white;
+    display: inline-block;
 }
 
 .invitation .date-locate .content .akad .card .divider-cont {
@@ -354,6 +385,13 @@ tes{
 
 .invitation .gallery{
     background-image: url("../img/bg-3.jpeg");
+}
+
+.invitation .gallery h1{
+    font-size: 40px;
+    color: #986A52;
+    margin: 0;
+    padding: 20px 0 20px 0;
 }
 
 /* == MUSIC == */

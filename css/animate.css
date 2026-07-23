@@ -1,28 +1,33 @@
 /* === COVER SCREEN === */
 
+.cover .second-cover{
+    --animate-delay: 1s;
+    --animate-duration: 2s;
+}
+
 .cover .second-cover .wedding-text{
-    --animate-delay: 1.4s;
-    --animate-duration: 1.4s;
+    --animate-delay: 2.3s;
+    --animate-duration: 2.3s;
 }
 
 .cover h1{
-    --animate-delay: 1.5s;
-    --animate-duration: 1.5s;
+    --animate-delay: 2.8s;
+    --animate-duration: 2.8s;
 }
 
 .cover .kepada{
-    --animate-delay: 1.8s;
-    --animate-duration: 1.8s;
+    --animate-delay: 3.3s;
+    --animate-duration: 3.3s;
 }
 
 .cover h4 {
-    --animate-delay: 2.2s;
-    --animate-duration: 2.2s;
+    --animate-delay: 3.5s;
+    --animate-duration: 3.5s;
 }
 
 .cover #btnOpen {
-    --animate-delay: 2.6s;
-    --animate-duration: 2.6s;
+    --animate-delay: 3.8s;
+    --animate-duration: 3.8s;
 }
 
 /* === INVITATION === */
