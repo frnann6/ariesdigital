@@ -209,10 +209,6 @@ body{
             0 10px 20px rgba(0, 0, 0, .15);
 }
 
-.invitation .save-date .btn-save-date:hover{
-    
-}
-
 /* 2. Opening Couple */
 
 .invitation .opening-couple .card{
@@ -383,15 +379,48 @@ body{
 
 /* 4. Gallery */
 
-.invitation .gallery{
+.invitation .gallery {
     background-image: url("../img/bg-3.jpeg");
+    background-size: cover;
+    padding: 0 18px 40px;
 }
 
-.invitation .gallery h1{
+.invitation .gallery h1 {
     font-size: 40px;
     color: #986A52;
     margin: 0;
+    padding: 20px 0 8px 0;
+}
+
+.gallery-grid {
+    column-count: 2;
+    column-gap: 12px;
     padding: 20px 0 20px 0;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 12px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    break-inside: avoid;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 180px;
+}
+
+.gallery-item--tall img {
+    height: 260px;
+}
+
+.gallery-item--wide img {
+    height: 220px;
 }
 
 /* == MUSIC == */
