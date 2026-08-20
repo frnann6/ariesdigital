@@ -76,3 +76,33 @@ window.addEventListener("focus", () => {
 });
 
 setMusicButtonState(false);
+
+// GIFT SECTION (ACCORDION)
+
+const button = document.getElementById("toggleBtn");
+const content = document.getElementById("content");
+const cards = document.querySelectorAll(".gift-cards > div");
+
+button.addEventListener("click", () => {
+  const isOpen = content.classList.toggle("active");
+
+  if (isOpen) {
+    cards.forEach((card) => {
+      card.classList.remove("animate__zoomOut");
+
+      card.classList.add("animate__animated", "animate__zoomIn",
+      "animate_delay-1s"
+      );
+    });
+  } else {
+    cards.forEach((card) => {
+      card.classList.remove("animate__zoomIn");
+
+      card.classList.add(
+        "animate__animated",
+        "animate__zoomOut",
+        "animate_delay-1s"
+      );
+    });
+  }
+});

@@ -63,3 +63,10 @@
     --animate-delay: 3.6s;
     --animte-duration: 3.6s;
 }
+
+/* Gift */
+
+.gift .accordion-content .gift-cards div{
+    animation-delay: 0.5s;
+    --animate-duration: 1s;
+}
