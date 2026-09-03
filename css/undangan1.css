@@ -145,6 +145,8 @@ body{
 /* 1. SAVE DATE */
 
 .invitation .save-date {
+    position: relative;
+
     background-image: url("../img/bg-3.jpeg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -157,6 +159,8 @@ body{
     height: 100vh;
     padding-left: 7px;
     padding-right: 7px;
+
+    overflow: hidden;
 }
 
 /* .invitation .save-date .perhiasan-left{
@@ -207,6 +211,71 @@ body{
     box-shadow:
             0 4px 6px rgba(0, 0, 0, .1),
             0 10px 20px rgba(0, 0, 0, .15);
+}
+
+/* DEKORASI */
+
+.flower {
+    position: absolute;
+    width: 200px;
+    height: auto;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.flower-top-left {
+    top: -20px;
+    left: -55px;
+
+    transform-origin: 20% 20%;
+    animation: flowerSway 4s ease-in-out infinite;
+}
+
+.flower-top-right {
+    top: -20px;
+    right: -65px;
+
+    transform: rotate(180deg);
+    transform-origin: 20% 20%;
+    animation: flowerSway 4s ease-in-out infinite;
+}
+
+.flower-bottom {
+    bottom: -25px;
+    right: -55px;
+
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    animation: flowerSwayBottom 5s ease-in-out infinite;
+}
+
+@keyframes flowerSway {
+
+    0%,
+    100% {
+        transform: rotate(0deg) translateX(0);
+    }
+
+    50% {
+        transform: rotate(3deg) translateX(5px);
+    }
+}
+
+@keyframes flowerSwayTopRight {
+    
+}
+
+@keyframes flowerSwayBottom {
+
+    0%,
+    100% {
+        transform: rotate(180deg) translateX(0);
+    }
+
+    50% {
+        transform: rotate(177deg) translateX(5px);
+    }
 }
 
 /* 2. Opening Couple */
@@ -630,6 +699,224 @@ body{
     margin: auto;
     margin-top: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 7. Messages */
+
+.invitation .message {
+    background: #f8f2e9;
+    padding: 54px 18px 64px;
+}
+
+.message-inner {
+    max-width: 390px;
+    margin: auto;
+}
+
+.attendance-select {
+    appearance: none;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23986A52' d='M2.2 4.2 6 8l3.8-3.8.8.8L6 9.6 1.4 5z'/%3E%3C/svg%3E") no-repeat right 12px center;
+    border: 1px solid #dfd0c1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #4d3930;
+    cursor: pointer;
+    font: 13px "Work Sans", sans-serif;
+    outline: none;
+    padding: 10px 34px 10px 11px;
+    width: 100%;
+}
+
+.attendance-select:focus {
+    border-color: #986A52;
+}
+
+.attendance-label {
+    color: #6d4a3a;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.message-heading .wedding-text {
+    color: #986A52;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+}
+
+.message-heading h1 {
+    color: #986A52;
+    font-size: 38px;
+    margin: 8px 0 4px;
+}
+
+.message-heading p {
+    color: #6d4a3a;
+    font-size: 13px;
+    margin: 0 0 26px;
+}
+
+.message-form {
+    background: #fff;
+    border: 1px solid rgba(152, 106, 82, 0.18);
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(109, 74, 58, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+}
+
+.message-form label {
+    color: #6d4a3a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.message-form input,
+.message-form textarea,
+.reply-form input,
+.reply-form textarea {
+    border: 1px solid #dfd0c1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #4d3930;
+    font: 13px "Work Sans", sans-serif;
+    outline: none;
+    padding: 10px 11px;
+    resize: vertical;
+    width: 100%;
+}
+
+.message-form input:focus,
+.message-form textarea:focus,
+.reply-form input:focus,
+.reply-form textarea:focus {
+    border-color: #986A52;
+}
+
+.message-submit,
+.reply-toggle,
+.message-reply-button {
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.message-submit {
+    background: #986A52;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 6px;
+    padding: 11px;
+}
+
+.message-submit:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.message-status {
+    color: #986A52;
+    font-size: 11px;
+    min-height: 16px;
+    margin: 2px 0 0;
+    text-align: center;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.message-card {
+    background: #fff;
+    border-left: 3px solid #986A52;
+    border-radius: 6px;
+    box-shadow: 0 5px 16px rgba(109, 74, 58, 0.07);
+    padding: 14px 15px;
+}
+
+.message-card-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.message-card-header strong {
+    color: #6d4a3a;
+    font-size: 13px;
+}
+
+.message-author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.message-attendance {
+    font: 11px "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.message-attendance.is-present {
+    color: #6e8b63;
+}
+
+.message-attendance.is-absent {
+    color: #a47768;
+}
+
+.message-card-header time {
+    color: #9b8679;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.message-card > p {
+    color: #5f514a;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 8px 0 10px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.reply-toggle {
+    background: transparent;
+    color: #986A52;
+    padding: 2px 0;
+}
+
+.reply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.reply-form .message-submit {
+    align-self: flex-start;
+    margin-top: 0;
+    padding: 8px 12px;
+}
+
+.message-reply {
+    background: #fbf7f1;
+    border-left: 2px solid #c99d7b;
+    box-shadow: none;
+    margin: 10px 0 0 12px;
+}
+
+.message-empty {
+    color: #876f61;
+    font-size: 13px;
+    padding: 12px;
+    text-align: center;
 }
 
 /* == MUSIC == */

@@ -57,6 +57,12 @@
         <section class="save-date">
             <!-- <img src="../img/assets/perhiasan-left.png" alt="" class="perhiasan-left"> -->
 
+            <img src="../img/assets/bunga-1.png" alt="" class="flower flower-top-left">
+
+            <!-- <img src="../img/assets/bunga-1.png" alt="" class="flower flower-top-right"> -->
+
+            <img src="../img/assets/bunga-1.png" alt="" class="flower flower-bottom">
+
             <span class="animate__animated animate__zoomIn animate__delay-1s wedding-text work-sans">THE WEDDING
                 OF</span>
             <img src="../img/erenmikasa.png" class="foto animate__animated animate__zoomIn animate__delay-1s" alt="">
@@ -330,7 +336,35 @@
             </div>
         </section>
 
-        <section class="message"></section>
+        <section class="message">
+            <div class="message-inner">
+                <div class="text-center message-heading">
+                    <!-- <span class="wedding-text work-sans">BUKU TAMU</span> -->
+                    <h1 class="great-vibes">Kirim Pesan</h1>
+                    <p class="work-sans">Tinggalkan doa dan pesan untuk kedua mempelai.</p>
+                </div>
+
+                <form id="messageForm" class="message-form">
+                    <label class="work-sans" for="messageName">Nama</label>
+                    <input id="messageName" name="name" type="text" maxlength="60" placeholder="Nama Anda" required>
+                    <label class="work-sans" for="messageText">Pesan</label>
+                    <textarea id="messageText" name="message" maxlength="500" rows="4"
+                        placeholder="Tulis ucapan dan doa Anda..." required></textarea>
+                    <span class="attendance-label work-sans">Konfirmasi kehadiran</span>
+                    <select class="attendance-select work-sans" name="attendance" required>
+                        <option value="" selected disabled>Pilih konfirmasi kehadiran</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak_hadir">Tidak hadir</option>
+                    </select>
+                    <button class="message-submit work-sans" type="submit"><i class="bi bi-send-fill"></i> Kirim Pesan</button>
+                    <p id="messageStatus" class="message-status work-sans" role="status" aria-live="polite"></p>
+                </form>
+
+                <div id="messageList" class="message-list" aria-live="polite">
+                    <p class="message-empty work-sans">Memuat pesan...</p>
+                </div>
+            </div>
+        </section>
 
         <section class="closing"></section>
 
@@ -344,6 +378,7 @@
 
     <script src="../js/undangan1.js"></script>
     <script src="../js/tamuLogic.js"></script>
+    <script type="module" src="../js/messageFirebase.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

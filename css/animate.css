@@ -67,6 +67,6 @@
 /* Gift */
 
 .gift .accordion-content .gift-cards div{
-    animation-delay: 0.5s;
+    /* animation-delay: 0.5s; */
     --animate-duration: 1s;
 }
