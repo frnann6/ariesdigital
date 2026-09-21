@@ -64,10 +64,12 @@ body{
 
     background-image: url("../img/background1.png");
     transition: transform 3s ease, opacity 5s ease;
+
+    overflow: hidden;
 }
 
 .cover .second-cover{
-    margin-top: 200px;
+    /* margin-top: 20px; */
     background-image: url("../img/bg-2.jpeg");
     background-size: cover;
     padding: 40px;
@@ -217,19 +219,20 @@ body{
 
 .flower {
     position: absolute;
-    width: 200px;
+    width: 220px;
     height: auto;
 
     z-index: 1;
     pointer-events: none;
+    will-change: transform, opacity;
 }
 
 .flower-top-left {
-    top: -20px;
-    left: -55px;
+    top: -8px;
+    left: -8px;
 
     transform-origin: 20% 20%;
-    animation: flowerSway 4s ease-in-out infinite;
+    animation: topFlowSway 5s ease-in-out infinite;
 }
 
 .flower-top-right {
@@ -242,12 +245,49 @@ body{
 }
 
 .flower-bottom {
-    bottom: -25px;
-    right: -55px;
+    right: -8px;
+    bottom: -8px;
 
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
-    animation: flowerSwayBottom 5s ease-in-out infinite;
+    transform-origin: 80% 80%;
+    animation: bottomFlowSway 8s ease-in-out infinite;
+}
+
+@keyframes topFlowSway {
+
+    0%,
+    100% {
+        opacity: .92;
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translate3d(5px, 3px, 0) rotate(1.2deg) scale(1.015);
+    }
+
+    70% {
+        opacity: .96;
+        transform: translate3d(-3px, 1px, 0) rotate(-.7deg) scale(1.005);
+    }
+}
+
+@keyframes bottomFlowSway {
+
+    0%,
+    100% {
+        opacity: .9;
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translate3d(-6px, -3px, 0) rotate(-1.4deg) scale(1.018);
+    }
+
+    75% {
+        opacity: .94;
+        transform: translate3d(3px, -1px, 0) rotate(.8deg) scale(1.006);
+    }
 }
 
 @keyframes flowerSway {
@@ -276,6 +316,36 @@ body{
     50% {
         transform: rotate(177deg) translateX(5px);
     }
+}
+
+.invitation .save-date .ftl,
+.invitation .save-date .fbr {
+    position: absolute;
+    z-index: 1;
+    width: 220px;
+    pointer-events: none;
+}
+
+.invitation .save-date .ftl {
+    top: -8px;
+    left: -8px;
+}
+
+.invitation .save-date .fbr {
+    right: -8px;
+    bottom: -8px;
+}
+
+.invitation .save-date .ftl .flower,
+.invitation .save-date .fbr .flower {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* 2. Opening Couple */
@@ -937,5 +1007,6 @@ body{
 }
 
 .music-toggle:hover{
-
+    background: #765645;
+    transform: translateY(-2px);
 }

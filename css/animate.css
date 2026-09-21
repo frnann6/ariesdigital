@@ -51,17 +51,27 @@
 
 .invitation .save-date .paragph {
     --animate-delay: 2.8s;
-    --animte-duration: 2.8s;
+    --animate-duration: 2.8s;
 }
 
 .invitation .save-date .date {
     --animate-delay: 3.2s;
-    --animte-duration: 3.2s;
+    --animate-duration: 3.2s;
 }
 
 .invitation .save-date .btn-save-date{
     --animate-delay: 3.6s;
-    --animte-duration: 3.6s;
+    --animate-duration: 3.6s;
+}
+
+.invitation .save-date .ftl {
+    --animate-delay: 1s;
+    --animate-duration: 3.6s;
+}
+
+.invitation .save-date .fbr {
+    --animate-delay: 1s;
+    --animate-duration: 3.6s;
 }
 
 /* Gift */

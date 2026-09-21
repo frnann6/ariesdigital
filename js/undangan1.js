@@ -90,8 +90,10 @@ button.addEventListener("click", () => {
     cards.forEach((card) => {
       card.classList.remove("animate__zoomOut");
 
-      card.classList.add("animate__animated", "animate__zoomIn",
-      "animate_delay-1s"
+      card.classList.add(
+        "animate__animated",
+        "animate__zoomIn",
+        "animate_delay-1s",
       );
     });
   } else {
@@ -101,7 +103,7 @@ button.addEventListener("click", () => {
       card.classList.add(
         "animate__animated",
         "animate__zoomOut",
-        "animate_delay-1s"
+        "animate_delay-1s",
       );
     });
   }

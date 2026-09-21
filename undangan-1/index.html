@@ -31,6 +31,10 @@
     <div class="cover" id="coverScreen">
         <img src="" alt="">
 
+        <img src="../img/assets/top-flow.png" alt="" class="flower flower-top-left">
+
+        <img src="../img/assets/bottom-flow.png" alt="" class="flower flower-bottom">
+
         <div class="text-center second-cover animate__animated animate__zoomIn animate__delay-1s">
             <span class="work-sans wedding-text animate__animated animate__zoomIn animate__delay-1s">THE WEDDING
                 OF</span>
@@ -57,11 +61,15 @@
         <section class="save-date">
             <!-- <img src="../img/assets/perhiasan-left.png" alt="" class="perhiasan-left"> -->
 
-            <img src="../img/assets/bunga-1.png" alt="" class="flower flower-top-left">
+            <div class="ftl animate__animated animate__slideInLeft animate__delay-1s">
+                <img src="../img/assets/top-flow.png" alt="" class="flower flower-top-left">
+            </div>
 
             <!-- <img src="../img/assets/bunga-1.png" alt="" class="flower flower-top-right"> -->
 
-            <img src="../img/assets/bunga-1.png" alt="" class="flower flower-bottom">
+            <div class="fbr animate__animated animate__slideInRight animate__delay-1s">
+                <img src="../img/assets/bottom-flow.png" alt="" class="flower flower-bottom">
+            </div>
 
             <span class="animate__animated animate__zoomIn animate__delay-1s wedding-text work-sans">THE WEDDING
                 OF</span>
@@ -319,7 +327,7 @@
                         adalah ungkapan
                         tanda kasih, Anda dapat
                         memberi kado secara cashless.</i></p>
-                <button class="btn" id="toggleBtn">Kirim Hadiah</button>
+                <button class="btn" id="toggleBtn"><i class="bi bi-gift-fill"></i> Kirim Hadiah</button>
             </div>
 
             <div class="accordion-content" id="content">
@@ -356,7 +364,8 @@
                         <option value="hadir">Hadir</option>
                         <option value="tidak_hadir">Tidak hadir</option>
                     </select>
-                    <button class="message-submit work-sans" type="submit"><i class="bi bi-send-fill"></i> Kirim Pesan</button>
+                    <button class="message-submit work-sans" type="submit"><i class="bi bi-send-fill"></i> Kirim
+                        Pesan</button>
                     <p id="messageStatus" class="message-status work-sans" role="status" aria-live="polite"></p>
                 </form>
 
