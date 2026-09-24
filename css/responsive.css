@@ -1,0 +1,12 @@
+/* Responsive */
+
+@media (max-width: 767px){
+    .invitation .save-date {
+        height: 90vh;
+    }
+
+        .invitation .save-date .ftl,
+        .invitation .save-date .fbr{
+            width: 210px;
+        }
+}
